@@ -1,0 +1,249 @@
+1
+
+iptables -A INPUT -p icmp -s 10.250.0.0/16 -j DROP
+
+
+iptables -A INPUT -p icmp -s 192.168.0.0/16 -j DROP
+
+
+iptables -A INPUT -p icmp -s 10.232.0.0/16 -j DRO
+
+
+sudo dnf install zstd
+
+
+curl -fsSL https://ollama.com/install.sh | sh
+
+
+systemctl start ollama
+
+
+systemctl enable ollama
+
+
+systemctl status ollama
+
+
+ollama pull mistral
+
+
+curl -fsSL https://openclaw.ai/install.sh | bash
+
+
+I understand this is personal-by-default and shared/multi-user use requires lock-down. Continue?
+│  ● Yes / ○ No
+
+
+ Setup mode
+│  ● QuickStart (Configure details later via openclaw configure.)
+│  ○ Manual
+
+ Model/auth provider
+│  ...
+│  ○ Hugging Face
+│  ○ Kilo Gateway
+│  ○ LiteLLM
+│  ○ Microsoft Foundry
+│  ○ MiniMax
+│  ○ Mistral AI
+│  ○ Moonshot AI (Kimi K2.5)
+│  ○ Ollama
+│  ○ OpenAI
+│  ○ OpenCode
+│  ○ OpenRouter
+│  ○ Qianfan
+│  ○ Qwen (Alibaba Cloud Model Studio)
+│  ○ SGLang
+│  ○ Synthetic
+│  ○ Together AI
+│  ○ Venice AI
+│  ○ Vercel AI Gateway
+│  ○ vLLM
+│  ○ Volcano Engine
+│  ○ xAI (Grok)
+│  ○ Xiaomi
+│  ○ Z.AI
+│  ● Skip for now
+
+
+
+Filter models by provider
+│  ● All providers
+│  ○ amazon-bedrock
+│  ○ anthropic
+│  ○ azure-openai-responses
+│  ○ cerebras
+│  ○ github-copilot
+│  ○ google
+│  ○ google-antigravity
+│  ○ google-gemini-cli
+│  ○ google-vertex
+│  ○ groq
+│  ○ huggingface
+│  ○ kimi-coding
+│  ○ minimax
+│  ○ minimax-cn
+│  ○ mistral
+│  ○ openai
+│  ○ openai-codex
+│  ○ opencode
+│  ○ opencode-go
+│  ○ openrouter
+│  ○ vercel-ai-gateway
+│  ○ xai
+│  ○ zai
+
+
+Default model
+│  ○ Keep current (default: anthropic/claude-opus-4-6)
+│  ● Enter model manually
+│  ○ amazon-bedrock/anthropic.claude-3-haiku-20240307-v1:0
+│  ○ amazon-bedrock/anthropic.claude-3-5-haiku-20241022-v1:0
+│  ○ amazon-bedrock/anthropic.claude-haiku-4-5-20251001-v1:0
+│  ○ amazon-bedrock/eu.anthropic.claude-haiku-4-5-20251001-v1:0
+│  ○ amazon-bedrock/global.anthropic.claude-haiku-4-5-20251001-v1:0
+│  ○ amazon-bedrock/us.anthropic.claude-haiku-4-5-20251001-v1:0
+│  ○ amazon-bedrock/anthropic.claude-opus-4-20250514-v1:0
+│  ○ amazon-bedrock/us.anthropic.claude-opus-4-20250514-v1:0
+│  ○ amazon-bedrock/anthropic.claude-opus-4-1-20250805-v1:0
+│  ○ amazon-bedrock/us.anthropic.claude-opus-4-1-20250805-v1:0
+│  ○ amazon-bedrock/anthropic.claude-opus-4-5-20251101-v1:0
+│  ○ amazon-bedrock/eu.anthropic.claude-opus-4-5-20251101-v1:0
+│  ○ amazon-bedrock/global.anthropic.claude-opus-4-5-20251101-v1:0
+│  ○ amazon-bedrock/us.anthropic.claude-opus-4-5-20251101-v1:0
+│  ○ amazon-bedrock/anthropic.claude-opus-4-6-v1
+│  ○ amazon-bedrock/eu.anthropic.claude-opus-4-6-v1
+│  ○ amazon-bedrock/global.anthropic.claude-opus-4-6-v1
+│  ○ amazon-bedrock/us.anthropic.claude-opus-4-6-v1
+│  ○ amazon-bedrock/anthropic.claude-3-5-sonnet-20240620-v1:0
+│  ○ amazon-bedrock/anthropic.claude-3-5-sonnet-20241022-v2:0
+│  ○ amazon-bedrock/anthropic.claude-3-7-sonnet-20250219-v1:0
+│  ○ amazon-bedrock/anthropic.claude-sonnet-4-20250514-v1:0
+│  …
+
+
+
+│  All providers
+│
+◇  Default model
+│  Enter model manually
+│
+◆  Default model
+│  ollama/mistral:latest█
+
+
+
+
+Select channel (QuickStart)
+│  Telegram (Bot API)
+│
+◇  Telegram bot token ───────────────────────────────────────────────────────────────────╮
+│                                                                                        │
+│  1) Open Telegram and chat with @BotFather                                             │
+│  2) Run /newbot (or /mybots)                                                           │
+│  3) Copy the token (looks like 123456:ABC...)                                          │
+│  Tip: you can also set TELEGRAM_BOT_TOKEN in your env.                                 │
+│  Docs: https://docs.openclaw.ai/telegram  │
+│  Website: https://openclaw.ai                                                          │
+│                                                                                        │
+├────────────────────────────────────────────────────────────────────────────────────────╯
+│
+◇  How do you want to provide this Telegram bot token?
+│  Enter Telegram bot token
+│
+◆  Enter Telegram bot token
+│  _
+
+
+
+
+
+ Search provider
+│  ○ Brave Search
+│  ● DuckDuckGo Search (experimental) (Free web search fallback with no API key required · key-free)
+│  ○ Exa Search
+│  ○ Firecrawl Search
+│  ○ Gemini (Google Search)
+│  ○ Grok (xAI)
+│  ○ Kimi (Moonshot)
+│  ○ Perplexity Search
+│  ○ Tavily Search
+│  ○ Skip for now
+
+
+
+
+Configure skills now? (recommended)
+│  ● Yes / ○ No
+
+
+
+
+ Install missing skill dependencies
+│  ◻ Skip for now
+│  ◻ 🔐 1password
+│  ◻ 📰 blogwatcher
+│  ◻ 🫐 blucli
+│  ◻ 📸 camsnap
+│  ◻ 🧩 clawhub
+│  ◻ 🛌 eightctl
+│  ◻ ✨ gemini
+│  ◻ 🧩 gh-issues
+│  ◻ 🧲 gifgrep
+│  ◼ 🐙 github (GitHub operations via `gh` CLI: issues, PRs, CI runs, code review, API queries. Use when:…)
+│  ◻ 🎮 gog
+│  ◻ 📍 goplaces
+│  ◻ 📧 himalaya
+│  ◻ 📦 mcporter
+│  ◻ 📄 nano-pdf
+│  ◻ 💎 obsidian
+│  ◻ 🎤 openai-whisper
+│  ◻ 💡 openhue
+│  ◻ 🧿 oracle
+│  ◻ 🛵 ordercli
+│  ◻ 🔊 sag
+│  ◻ 📜 session-logs
+│  ◻ 🌊 songsee
+│  …
+
+
+
+
+
+ Show Homebrew install command?
+│  ○ Yes / ● No
+
+
+
+
+◇  Set GOOGLE_PLACES_API_KEY for goplaces?
+│  No
+│
+◇  Set NOTION_API_KEY for notion?
+│  No
+│
+◆  Set OPENAI_API_KEY for openai-whisper-api?
+│  ○ Yes / ● No
+
+
+
+Set ELEVENLABS_API_KEY for sag?
+│  ○ Yes / ● No
+
+
+
+
+ Enable hooks?
+│  ◻ Skip for now
+│  ◻ 🚀 boot-md
+│  ◻ 📎 bootstrap-extra-files
+│  ◻ 📝 command-logger
+│  ◼ 💾 session-memory (Save session context to memory when /new or /reset command is issued)
+
+
+
+
+ How do you want to hatch your bot?
+│  ● Hatch in TUI (recommended)
+│  ○ Open the Web UI
+│  ○ Do this later
